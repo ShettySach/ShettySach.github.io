@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shettysach</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-family: monospace;
+        font-size: 120%;
+        max-width: 750px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          font-size: 100%;
+        }
+      }
+
+      pre {
+        text-align: center;
+      }
+
+      a {
+        color: #0077ff;
+      }
+
+      rs,
+      jp {
+        color: #ff6527;
+      }
+
+      py {
+        color: #0dc400;
+      }
+
+      torch {
+        color: #ee0000;
+      }
+
+      deps {
+        color: #bbbbbb;
+      }
+    </style>
+  </head>
+
+  <body>
+    <pre style="center">
+   .x+=:.                                     
+  z`    ^%                          .uef^"    
+     .   &gt;k                       :d88E       
+   .@8Ned8"                   .   `888E       
+ .@^%8888"     us888u.   .udR88N   888E .z8k  
+x88:  `)8b. .@88 "8888" &gt;888'888k  888E~?888L 
+8888N=*8888 9888  9888  9888 'Y"   888E  888E 
+ %8"    R88 9888  9888  9888       888E  888E 
+  @8Wou 9%  9888  9888  9888       888E  888E 
+.888888P`   9888  9888  ?8888u../  888E  888E 
+`   ^"F     "888*""888"  "8888P'  m888N= 888&lt; 
+             ^Y"   ^Y'     "P'     `Y"   888  
+                                        J88"  
+                                        @%    
+                                      :"      
+    </pre>
+    <hr />
+
+    <a target="_blank" href="https://github.com/ShettySach/ferrograd"
+      >[github]</a
+    >
+    <a target="_blank" href="https://shettysach.github.io/Termfolio/"
+      >[termfolio]</a
+    >
+
+    <p>
+      Hello, I'm Sachith C Shetty.<br />
+      Currently, I'm a final year student at VIT, Vellore.
+    </p>
+
+    <p>I'm interested in / like:</p>
+    <ul>
+      <li>Deep Learning</li>
+      <ul>
+        <li>Neural Networks</li>
+        <li>Natural Language Processing</li>
+        <li>Computer Vision</li>
+        <li>Language Models</li>
+        <li>Transformers</li>
+        <li>Vision Transformers</li>
+      </ul>
+      <li>Open Source</li>
+      <li>Embedded Systems</li>
+      <li>GNU/Linux</li>
+      <li>NixOS</li>
+      <li>CLIs and TUIs</li>
+      <li>WASM</li>
+      <li>Procedural language paradigm</li>
+      <li>Functional language paradigm</li>
+    </ul>
+    <hr />
+
+    <p>Projects:</p>
+
+    <ul>
+      <pre>
+ ___                               _ 
+|  _|___ ___ ___ ___ ___ ___ ___ _| |
+|  _| -_|  _|  _| . | . |  _| .'| . |
+|_| |___|_| |_| |___|_  |_| |__,|___|
+                    |___|            
+      </pre>
+      <li>
+        <b>ferrograd</b>
+
+        <a target="_blank" href="https://github.com/ShettySach/ferrograd"
+          >[repo]</a
+        >
+      </li>
+      <p>
+        A small scalar autograd engine / Rust library, inspired from Karpathy's
+        micrograd, with more features, such as implementations of extra
+        activation functions, optimizers, loss criterions and accuracy metrics.
+      </p>
+      <p>
+        Capable of MNIST classification. Example implemented using the library.
+      </p>
+      <p>
+        Capable of creating neurons, dense layers and multilayer perceptrons
+        (MLPs). Can be utilised for binary and multiclass/multilabel non-linear
+        classification.
+      </p>
+      <ul>
+        <li>
+          Optimizers - <br />
+          Adam, RMSprop, SGD with momentum.
+        </li>
+        <li>
+          Loss criterions - <br />
+          Binary Cross-Entropy, Cross-Entropy, Hinge, MSE/RMSE.
+        </li>
+        <li>
+          Activation functions - <br />
+          ReLU, LeakyReLU, Sigmoid, tanh.
+        </li>
+      </ul>
+      <p>Languages: <rs>rust</rs></p>
+
+      <hr />
+
+      <pre>
+  _  __          _  _              _  ___      _    
+ | |/ /__ _ _ _ | || |__ _ _ _  __| |/ __|__ _| |__ 
+ | ' &lt;/ _` | ' \| __ / _` | ' \/ _` | (__/ _` | / _|
+ |_|\_\__,_|_||_|_||_\__,_|_||_\__,_|\___\__,_|_\__|
+      </pre>
+      <li>
+        <b>Kannada Handwriting Calculator</b>
+
+        <a
+          target="_blank"
+          href="https://github.com/ShettySach/Kannada-Handwriting-Calculator"
+          >[repo]</a
+        >
+      </li>
+      <p>
+        A calculator that uses handwritten Kannada digits and operators to
+        calculate the result, using contour detection and ConvNet (Convolutional
+        Neural Network) model prediction.
+      </p>
+      <ul>
+        <li>
+          PyTorch is used to create, train and load the state of the neural
+          network model used for predictions.
+        </li>
+        <li>The CNN is trained on Kannada MNIST.</li>
+        <li>
+          OpenCV and Pillow (PIL) are used to read input from the GUI canvas and
+          to obtain contours for individual digits/operators.
+        </li>
+        <li>CustomTKinter is used to provide the GUI.</li>
+        <li>
+          The individual digits/operators are detected and their most probable
+          target classes are predicted.
+        </li>
+        <li>
+          The predictions are combined into a string and evaluated to get the
+          result.
+        </li>
+      </ul>
+      <p>
+        Languages: <py>python</py><br />
+        Modules: <torch>pytorch</torch>, <torch>torchvision</torch>,
+        <deps>opencv</deps>,<deps> numpy</deps>, <deps>pandas</deps>,
+        <deps>customtkinter</deps><br />
+        Tools: <py>conda</py>, <jp>jupyter notebooks</jp><br />
+      </p>
+
+      <hr />
+
+      <pre>
+                     <torch>(</torch>                      
+                     <torch>)\</torch>                     
+   ___              <torch>((_)</torch>    __  __ _    _   
+  / __|__ _ _ _  __| | |___|  \/  (_)__| |_ 
+ | (__/ _` | ' \/ _` | / -_) |\/| | (_-<  _|
+  \___\__,_|_||_\__,_|_\___|_|  |_|_/__/\__|
+     </pre
+      >
+      <li>
+        <b>CandleMist</b>
+
+        <a target="_blank" href="https://github.com/ShettySach/CandleMist"
+          >[repo]</a
+        >
+      </li>
+
+      <p>
+        A fullstack chatbot built using Rust, in the frontend and the
+        backend.<br />
+        Uses quantized Mistral 7B Instruct v0.1 GGUF models.
+      </p>
+      <p>
+        Built using huggingface's
+        <a target="_blank" href="https://github.com/huggingface/candle"
+          >candle</a
+        >
+        framework, which consists of the <deps>candle_transformers</deps> crate,
+        for LLM inferencing.
+      </p>
+      <p>
+        Uses Tokio and Actix frameworks the async functionality and the backend,
+        along with Leptos and TailwindCSS for the frontend.
+      </p>
+      <p>
+        Languages: <rs>rust</rs><br />
+        Crates: <torch>candle-core</torch>, <torch>candle-transformers</torch>,
+        <deps>tokio</deps>,<deps> actix</deps>, <deps>leptos</deps>,
+        <deps>tailwind</deps>
+      </p>
+
+      <hr />
+
+      <pre>
+  __  _  _  ____  ____    __ _  ___    ____   __    ___ 
+ (  )( \/ )(    \(  _ \  (  / )/ __)  (  _ \ / _\  / __)
+  )( / \/ \ ) D ( ) _ (   )  (( (_ \   )   //    \( (_ \
+ (__)\_)(_/(____/(____/  (__\_)\___/  (__\_)\_/\_/ \___/
+      </pre>
+      <li>
+        <b>IMDb 250 Knowledge Graph RAG</b>
+
+        <a
+          target="_blank"
+          href="https://github.com/ShettySach/IMDb-Knowledge-Graph-RAG"
+          >[repo]</a
+        >
+      </li>
+      <p>
+        Simple implementation of Graph RAG using IMDb Top 250, Neo4j Graph
+        database and Gemini API.
+      </p>
+
+      <p>Neo4j database stores the network graph.</p>
+      <ul>
+        <li>
+          There are 3 types of nodes - Movie, Genre, Person Person can be -
+          Actor, Director, Writer or a combination of these.
+        </li>
+        <li>
+          Relationships are -<br />
+          Person - [ WROTE / ACTED_IN / DIRECTED ] -&gt; Movie<br />
+          Movie - [ BELONGS_TO ] -&gt; Genre
+        </li>
+      </ul>
+
+      <p>LangChain and Gemini are used for the pipeline, which</p>
+      <ul>
+        <li>Processes the natural language prompt</li>
+        <li>Generates a Cypher query</li>
+        <li>
+          Queries the Neo4j database with generated query and gets back the
+          result in JSON Parses the JSON and responds back in natural language
+        </li>
+      </ul>
+
+      <p>
+        Languages: <py>python</py><br />
+        Modules:
+        <deps>langchain</deps>, <deps>neo4j-python</deps>,<deps> numpy</deps>,
+        <deps>polars</deps><br />
+        Tools: <deps>neo4j</deps>, <py>conda</py>, <jp>jupyter notebooks</jp
+        ><br />
+      </p>
+
+      <hr />
+
+      <pre>
+ _____________  __  ___________  __   ________ 
+/_  __/ __/ _ \/  |/  / __/ __ \/ /  /  _/ __ \
+ / / / _// , _/ /|_/ / _// /_/ / /___/ // /_/ /
+/_/ /___/_/|_/_/  /_/_/  \____/____/___/\____/ 
+     </pre
+      >
+      <li>
+        <b>Termfolio</b>
+
+        <a target="_blank" href="https://github.com/ShettySach/Termfolio"
+          >[repo]</a
+        >
+        <a target="_blank" href="https://shettysach.github.io/Termfolio/"
+          >[page]</a
+        >
+      </li>
+
+      <p>
+        Terminal style portfolio webiste, built using the Leptos framework, for
+        Rust WASM.
+        <br />
+        [ WIP ]
+      </p>
+      <p>
+        Languages: <rs>rust</rs>, html, css<br />
+        Crates:
+        <deps>leptos</deps>,
+        <deps>tokio</deps>
+      </p>
+    </ul>
+
+    <hr />
+    <p>Languages:</p>
+    <ul>
+      <li><rs>Rust</rs> - intermediate</li>
+      <li><py>Python</py> - intermediate</li>
+      <li>C, Java, CPP - basic</li>
+      <li>HTML/CSS - basic</li>
+      <li>Zig - beginner</li>
+      <li>Markdown</li>
+      <li>LaTeX</li>
+    </ul>
+
+    <p>Tools:</p>
+    <ul>
+      <li>Neovim</li>
+      <li>VS Codium</li>
+      <li>Helix</li>
+      <li>Anaconda</li>
+      <li>Jupyter</li>
+      <li>Fedora</li>
+      <li>Sway</li>
+    </ul>
+  </body>
+</html>
