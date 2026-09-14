@@ -69,7 +69,7 @@ main {
 }
 
 header {
-    font-family: "Lora", serif;
+    font-family: "Work Sans", sans-serif;
     background: var(--auxillary-bg);
     color: var(--color-slate-200);
     padding: 1rem 20%;
